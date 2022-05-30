@@ -1,3 +1,5 @@
+
+   
 from datetime import datetime, date
 from random import choice as r_c
 import mysql.connector as my
@@ -7,7 +9,7 @@ from tabulate import tabulate
 print("""Connecting to the server...
 Secure connection established.\n\n\n\n""")
 
-mydb = my.connect(host='localhost', user='root', passwd='password', autocommit=True)
+mydb = my.connect(host='localhost', user='root', passwd='Ekansh@04', autocommit=True)
 mycursor = mydb.cursor()
 mycursor.execute("Create Database if not exists HOSPITAL")
 print("CHECKING AND CREATING DATABASE...")
@@ -267,17 +269,13 @@ def discharge():
 
                 print( """ NAME  :   {name}                     AGE : {age}                     GENDER : {gender}         
 CONSULTANT DOCTOR : {consultant}                  
-
 WEIGHT : {weight}kg                     D.O.A : {doa}                       DATED : {dod}
-
     SUMMARY  
     The Patient, {name} was admitted in the hospital on {doa} due to {ill}, according to various 
     reports, under the doctor {consultant}.
     He/She has been discharged on {dod} because of {rea}. The condition of the patient is {con}. 
     The patient is advised to follow regularly the post discharge medication procedures as told by 
     the doctor or else, it may lead from mild to severe consequences. 
-
-
 +--------------------------------------------------------------------+
 |                                  BILL                              |
 +--------------------------------------------------------------------+""")
@@ -374,7 +372,6 @@ def choice1():
   |    4     |       search staff     |
   |    5     |       Exit             |
   +----------+------------------------+
-
     Your Choice   :  """))
             if b == 1:
                 display_staff()
@@ -443,14 +440,14 @@ def choice2():
         print(e, "\n Please enter a Valid 'Number' from above.")
 
 
-print('*********************************8*')
+print('*****************************************************************************************************')
 print('*                                                                                                   *')
 print('*                                                                                                   *')
 print('*                                  RED CROSS HOSPITAL                                               *')
 print('*         (A group of multi-speciality hospital and research centre owned by A&A co.)               *')
 print('*                                                                                                   *')
 print('*                                                                                                   *')
-print('***********************************')
+print('*****************************************************************************************************')
 print('\n\n\n')
 
 while True:
@@ -464,7 +461,6 @@ while True:
    | 2      |     Patient Info  |
    | 3      |     Exit          |
    +----------------------------+
-
     Your choice  :  '''))
 
         if a == 1:
